@@ -33,7 +33,7 @@ class ContentResource extends Resource
         ->schema([
             Card::make()->schema([
                 Grid::make(2)->schema([
-                    Forms\Components\MarkdownEditor::make('content')
+                    Forms\Components\RichEditor::make('content')
                     ->required()
                     ->label('Content')
                     ->maxLength(255),

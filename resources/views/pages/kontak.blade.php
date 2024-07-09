@@ -4,10 +4,9 @@
 
 <section id="contact" class="contact section">
     <br><br>
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <p>Kontak</p>
-    </div><!-- End Section Title -->
+    </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -22,7 +21,7 @@
                 <h3>Alamat</h3>
                 <p>{{ $alamat->content }}</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
             <div class="col-md-6">
               <div class="info-item" data-aos="fade" data-aos-delay="500">
@@ -31,7 +30,7 @@
                 <p>{{ $jamoperasional->content }}</p>
                 <p>08.00 - 22.00</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
             <div class="col-md-6">
               <div class="info-item" data-aos="fade" data-aos-delay="400">
@@ -39,7 +38,7 @@
                 <h3>Email</h3>
                 <p>{{ $email->content }}</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
             <div class="col-md-6">
               <div class="info-item" data-aos="fade" data-aos-delay="300">
@@ -47,7 +46,7 @@
                 <h3>Telepon</h3>
                 <p>{{ $telepon->content }}</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
           </div>
 
@@ -83,7 +82,7 @@
 
             </div>
           </form>
-        </div><!-- End Contact Form -->
+        </div>
 
       </div>
 
@@ -94,4 +93,3 @@
 
 @endsection
 
-https://wa.me/6289683389765?text=Untuk%20memesan%20bunga%20silahkan%20isi%20form%20dibawah%20ini%OA

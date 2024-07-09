@@ -42,10 +42,10 @@ class MainController extends Controller
         return view('pages.artikel', compact('title', 'artikel'));
     }
 
-    public function detail_blog(Request $request)
+    public function detail_blog($id)
     {
         $title = 'detail_blog';
-        $artikel = Artikel::get();
+        $artikel = Artikel::where('id', $id)->firstOrFail();
         return view('pages.detail_blog', compact('title', 'artikel'));
     }
 

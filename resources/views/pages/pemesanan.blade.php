@@ -19,9 +19,9 @@
             <h3 style="color: #012970;">Tunggu Apa Lagi, Ayo Pesan Sekarang!</h3>
             <a href="https://wa.wizard.id/0a6305" class="btn-buy">Klik Disini</a>
           </div>
-        </div><!-- End Pricing Item -->
+        </div>
 
-      </div><!-- End pricing row -->
+      </div>
 
     </div>
 

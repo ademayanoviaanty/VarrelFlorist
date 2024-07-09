@@ -10,7 +10,7 @@
             <div class="container section-title" data-aos="fade-up">
                 <p>Koleksi Kami</p>
             </div>
-            
+
             <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
               <li data-filter="*" class="filter-active">Semua</li>
               <li data-filter=".filter-handbouquet">Bunga Handbouquet</li>
@@ -20,10 +20,10 @@
               <li data-filter=".filter-pengantin">Buket Pengantin</li>
               <li data-filter=".filter-artificial">Artificial</li>
               <li data-filter=".filter-lainnya">Lain Lain</li>
-            </ul><!-- End Portfolio Filters -->
+            </ul>
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            @foreach($koleksi as $item)
+            @forelse($koleksi as $item)
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ $item->kategori }}">
                 <div class="portfolio-content h-100">
                   <img src="{{ Storage::url($item->gambar) }}" class="img-fluid" alt="">
@@ -32,14 +32,19 @@
                     <a href="{{ Storage::url($item->gambar) }}" title="{{ $item->judul }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   </div>
                 </div>
-              </div><!-- End Portfolio Item -->
-              @endforeach
+              </div>
+            @empty
+              <div class="col">
+                <p>Tidak ada koleksi yang tersedia saat ini.</p>
+              </div>
+            @endforelse
 
-            </div><!-- End Portfolio Container -->
+            </div>
 
           </div>
 
         </div>
 
+    </section>
 
 @endsection
